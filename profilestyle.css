@@ -1,0 +1,250 @@
+:root{
+    --gradient:linear-gradient(90deg, #4f1477, #cf9228);
+}
+
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    border:none; outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+      transition: all .2s linear;
+}
+
+*::selection{
+    background:#280753;
+    color:#fff;
+}
+
+#logoimage {
+     height: 100px;
+     width:100px;
+     border-radius: 50%;
+     
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+background:linear-gradient(rgba(172, 28, 28, 0.7),rgba(0,0,0,0.7));
+    background-size: cover;
+    
+}
+
+section{
+    min-height: 40vh;
+    padding:1rem 7%;
+    padding-top:6rem;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    top:0; left: 0;
+    z-index: 1000;
+    padding:1.5rem 7%;
+    background:var(--gradient);
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+
+ .logo{
+    color:rgb(238, 235, 235);
+    font-size: 3vmin !important;
+    font-family:  Tahoma;
+}
+
+
+header .navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin:0 1rem;
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    color:rgba(226, 229, 228, 0.89);
+    text-decoration: none;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color:rgb(68, 165, 29);
+}
+header #menu{
+    font-size: 2.5rem;
+    color:#fff;
+    cursor: pointer;
+    display: none;
+}
+  header .logout  {
+   background: rgb(35, 189, 61);
+   }
+header .logout .log{
+    font-size: 30px;
+    color:#b9b5bb;
+    text-decoration: none
+}
+
+
+.container-prof .heading{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: beige;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+
+
+
+}
+.container-prof .profile_card{
+
+
+    width:200px;
+    margin: auto;
+    background:rgb(228, 186, 186);
+   box-shadow: 0 4px 10px 0 rgba(0,0,0,.5);
+   
+}
+
+.container-prof .profile_card .image-container{
+    position: relative;
+   
+    
+}
+
+.container-prof .profile_card .title{
+    text-align: center;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+
+}
+
+.container-prof .profile_item{
+    margin-bottom: 20px;
+}
+
+
+.container-prof .profile_item ul{
+    
+    box-shadow:0 4px 10px 0 rgba(0,0,0,.5);
+}
+
+
+
+
+
+.container-prof .profile_item ul li{
+    
+    
+          margin:0 1rem;
+         display: flex;
+        
+        flex-direction: row;
+        float: left;
+       
+        justify-content: center;
+            list-style: none;
+         text-decoration: none;
+}
+
+
+.container-prof .profile_item ul  li:hover{
+    color:rgb(68, 165, 29);
+}
+
+
+.container-prof .profile_item ul li .icon{
+    position: relative;
+    padding-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+}
+
+.container-prof .profile_item ul li .info{
+    color: #b9b5bb;
+    font-size: 2rem;
+    position: relative;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header #menu{
+        display: block;
+        z-index: 1000;
+     
+    }
+
+    header .navbar{
+        position: fixed;
+        z-index: 999;
+        top:-120%; left:0;
+        width:100%;
+        background:rgb(3, 3, 3);
+    }
+
+    header .navbar ul{
+        flex-flow: column;
+        padding:2rem 0;
+    }
+
+    header .navbar ul li{
+        margin:2.5rem 0;
+        text-align: center;
+        width:100%;
+    }
+
+    header .navbar ul li a{
+        font-size: 2.5rem;
+        display: block;
+    }
+
+    header .navbar ul li a.active,
+    header .navbar ul li a:hover{
+        color:#cf831e;
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+     }
+
+    header .navbar.nav-toggle{
+        top:6.4rem;
+        
+    }
+    
+}
